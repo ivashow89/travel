@@ -1,0 +1,122 @@
+body {
+    font-family: Verdana;
+}
+/*-- Оформление содержимого всей страницы по умолчанию скопировано с предыдущей версии сайта --*/
+.body-top {
+    width: 80%;
+    border: none;
+    margin: auto;
+    font-family: Verdana;
+    font-style: normal;
+    font-size: normal;
+    font-weight: bold;
+    text-align: center;
+}
+/*-- Оформление содержимого всего блока заголовка --*/
+header {
+    padding: 1em;
+    color: white;
+    background-color: #007196;
+    vertical-align: center;
+}
+/*-- Размер логотипа для средних и больших экранов --*/
+#logo {
+    max-width: 180px;
+    max-height: 140px;
+}
+/*-- "Плавающее" в зависимости от изменения экрана название --*/
+.col-9 {
+    display: flex;
+}
+/*-- Заголовок в плавающем окне по центру --*/
+h1 {
+    margin: auto;
+}
+/*-- МЕДИА-ЗАПРОС позволяет сделать размер логотипа и название меншими при изменении размера окна до размера мобильного устройства --*/
+@media screen and (max-width: 768px) {
+    #logo {
+        max-width: 100px;
+        max-height: 70px;
+    }
+    h1 {
+        font-size: 14px
+    }    
+}
+#menu {
+    /*-- Фон всего меню --*/
+    background-color: #66CDAA;
+    
+}
+
+.nav a {
+    /*-- Цвет и рамка каждого пункта меню --*/
+    color:  white;
+    border: solid white;
+    box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+}   
+
+.tours {
+    border: solid #007196;
+    margin: auto;
+    height: 100%;
+}
+
+.tours img {
+    width: 250px;
+    height: 170px;
+    padding: 5px;
+}
+
+.tours a {
+    background-color: #66CDAA;
+    box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+    color: white;
+}
+
+.tour {
+    border: solid #007196;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+.tour img {
+    width: 250px;
+    height: 170px;
+    padding: 5px;
+}
+
+.tour p .tour img {
+    margin: 0 10px;
+}
+
+.btn {
+    max-width: 180px;
+    min-width: 150px;
+    margin-left: auto;
+    order: 999;
+    background-color: #66CDAA;
+    box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+    color: white;
+}
+
+/* Страница занимает 100% экрана по высоте */
+html {
+    height: 100%;
+}
+/* Тело документа имеет относильное позиционирование, но отступ для тела документа снизу больше или равен высоте футера */
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 10%;
+}
+/* Подвал документа имеет абсолютное позиционирование, высоту 50px */
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    color: white;
+    background-color: #007196;
+}

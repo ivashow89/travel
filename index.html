@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <!-- Подключаем bootstrap локально -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+   <!-- Здесь добавляем ссылку на собственные стили -->
+   <!-- Собственные стили -->
+   <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Создаем блок для области заголовка -->
+
+  </head>
+
+<!-- Используем стиль body-top по умолчанию для всего документа -->
+<body class="body-top">
+    <!-- Создаем блок для области заголовка -->
+    <header class="container">
+        <!-- Создаем новую горизонтальную облоасть (строку) -->
+        <div class="row">
+            <!-- Внутри горизонтальной области определяем первую колонку шириной 3/12 -->
+            <div class="col-3">
+                <!-- Внутри выводим логотип -->
+                <img id="logo" src="img/logo.jpg">
+                <!-- Завершаем первый столбец -->
+            </div>
+            <!-- Внутри горизонатьной области определяем вторую колонку, шириной 9/12 -->
+            <div class="col-9">
+                <!-- Внутри водим название -->
+                <h1>Путешествуй с нами!</h1>
+                <!-- Завершаем второй столбец -->
+            </div>
+            <!-- Завершаем строку -->
+        </div>
+        <!-- Завершаем описание области заголовка -->
+    </header>
+         <!-- Обертка для меню -->
+         <div id="menu">
+            <!-- Начало flex-menu -->
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <!-- Ссылка на главную страницу -->
+                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Главная</a>
+                <!-- Ссылка на страницу с информаией о турах -->
+                <a class="flex-sm-fill text-sm-center nav-link" href="turs.html">Наши туры</a>
+                <!-- Ссылка на страницу с контактами -->
+                <a class="flex-sm-fill text-sm-center nav-link" href="contacts.html">О нас</a>
+            </nav>
+        </div>
+
+    <!-- Начало всего блока с содержимым -->
+    <main class="flex">
+        <!-- Начаол первой строки в этом блоке -->
+        <div class="row">
+            <!-- Начало единственной колонки в первой строке -->
+            <div class="col">
+                Наши акции
+            </div>
+        </div>
+        <!-- Начало второй строки в этом блоке -->
+        <div class="row">
+        <!-- Начало первой колонки во второй строке -->
+        <div class="col">
+            <!-- СОздаем еще один блок, который обьеденит картинку и ссылку в этой колонке -->
+            <div class="tours">
+                <!-- Ввыводим картинку -->
+                <img src="img/crimea.jpg">
+                <p>
+                    <!-- С новой строки выводим ссылку -->
+                    <a class="tours" href="#">Подробнее об акции</a>
+                </p>
+            </div>
+        </div>
+        <!-- Аналогично описываем еще две колонки в пределах второй строки -->
+        <div class="col">
+            <div class="tours">
+                <img src="img/kavkaz.jpg">
+                <p>
+                    <a class="tours" href="#">
+                        Подробнее об акции</a>
+                </p>
+                <!-- Закрываем блок с картинкой и ссылкой-->
+            </div>
+            <!-- Закрываем колонку -->
+        </div>
+        <div class="col">
+            <div class="tours">
+                <img src="img/altay.jpg">
+                <p>
+                    <a class="tours" href="#">
+                        Подробности об акции </a>
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                Это сайт, предназначенный для обучения
+            </div>
+        </div>
+    </footer>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Подключаем библиотки JavaScript локально -->
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+    </html>
